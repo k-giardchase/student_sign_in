@@ -1,11 +1,11 @@
 studentSignIn.controller('StatusCtrl', function StatusCtrl($scope, StudentsFactory) {
   $scope.students = StudentsFactory.students;
 
-  $scope.signIn = function(student) {
-    StudentsFactory.signIn(student);
+  $scope.signIn = function(item) {
+    StudentsFactory.signIn(item);
   };
 
-  $scope.signOut = function(student) {
-    Students.Factory.signOut(student);
+  $scope.signOut = function(item) {
+    StudentsFactory.signOut(item);
   };
 });

@@ -2,13 +2,18 @@
   <h1>Sign-in, please</h1>
   <ul class='list-unstyled'>
     <li ng-repeat='item in students'>
-      {{ item.name }}
-      <span ng-click='absent = false' ng-hide='!absent'>
-        <button ng-click='signIn()'type='submit' class='btn btn-info'>Sign-in</button>
-      </span>
-      <span ng-click='absent = true' ng-hide='absent'>
-        <button ng-click='signOut()'type='submit' class='btn btn-danger'>Sign-out</button>
+      <span>
+        <a ng-click='signIn(item)'>{{ item.name }}</a>
       </span>
     </li>
   </ul>
 </div>
+
+
+<!-- <span ng-hide='{{ item.present: false}}'>
+<a ng-click='signIn()'>
+  <button type='submit' class='btn btn-info'>Sign-in</button></a>
+</span>
+<span  ng-show ='{{ item.present: true}}'>
+  <a ng-click='signOut()'><button type='submit' class='btn btn-danger'>Sign-out</button></a>
+</span> -->
