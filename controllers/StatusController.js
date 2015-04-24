@@ -1,4 +1,4 @@
-studentSignIn.controller('StatusCtrl', function StatusCtrl() {
+studentSignIn.controller('StatusCtrl', function StatusCtrl($scope, StudentsFactory) {
   $scope.students = StudentsFactory.students;
 
   $scope.signIn = function(student) {
