@@ -11,5 +11,11 @@ var studentSignIn = angular.module('studentSignIn', ['ui.router']);
       templateUrl: 'partials/sign_in.html',
       controller: 'StatusCtrl'
     });
-    
+
+    $stateProvider.state('whos_here', {
+      url: '/whos_here',
+      templateUrl: 'partials/whos_here.html',
+      controller: 'StudentsCtrl'
+    });
+
   });
