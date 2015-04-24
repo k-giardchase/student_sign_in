@@ -1,15 +1,16 @@
 <div class="row">
-  <div class="col-md-6">
-    <ul>
+  <div class="col-md-6 text-justify">
+    <h2>Present</h2>
+    <ul class='list-unstyled'>
       <li ng-repeat='item in filteredStudents = (students | filter: {present: true})'>
         {{item.name}}
       </li>
     </ul>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-6 text-justify">
     <h2>Absent</h2>
-    <ul>
+    <ul class='list-unstyled'>
       <li ng-repeat='item in filteredStudents = (students | filter: {present: false})'>
         {{item.name}}
       </li>
