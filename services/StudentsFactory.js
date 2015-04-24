@@ -7,5 +7,14 @@ studentSignIn.factory('StudentsFactory', function StudentsFactory() {
     { name: "Bryant", present: false },
     { name: "Gillian", present: false }
   ]
+
+  factory.signIn = function(student) {
+    student.present = true;
+  };
+
+  factory.signOut = function(student) {
+    student.present = false;
+  };
+
   return factory;
 });
