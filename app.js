@@ -1,9 +1,8 @@
-var studentSignIn = angular.module('studentSignIn', ['ui-router']);
+var studentSignIn = angular.module('studentSignIn', ['ui.router']);
 
   studentSignIn.config(function($stateProvider) {
     $stateProvider.state('home', {
       url: '',
-      templateUrl: 'partials/home.html',
-      controller: 'StudentsCtrl'
+      templateUrl: 'partials/home.html'
     });
   });
