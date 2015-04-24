@@ -2,8 +2,12 @@
   <h1>Sign-in, please</h1>
   <ul class='list-unstyled'>
     <li ng-repeat='item in students'>
-      <span>
-        <a ng-click='signIn(item)'>{{ item.name }}</a>
+      {{ item.name }}
+      <span ng-click='here = true' ng-hide='here'>
+        <a ng-click='signIn(item)'><button type='submit' class='btn btn-info'>Sign-in</button></a>
+      </span>
+      <span ng-show='here' ng-click='here = false'>
+        <a ng-click='signOut(item)'><button type='submit' class='btn btn-danger'>Sign-out</button></a>
       </span>
     </li>
   </ul>
