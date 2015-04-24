@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <li ng-repeat='item in filteredStudents = (students | filter: {present: true})'>
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-md-6">
+    <h2>Absent</h2>
+    <ul>
+      <li ng-repeat='item in filteredStudents = (students | filter: {present: false})'>
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
+</div>
