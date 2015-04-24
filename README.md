@@ -1,5 +1,5 @@
 ##Developers
-Kyle Giard-Chase & Brian Kropff
+Kyle Giard-Chase
 
 ##Date
 April 24 2015
@@ -7,7 +7,7 @@ April 24 2015
 
 
 ##Description
-An app that allows a classroom teacher to keep track of attendance. Students are able to sign themselves in and out, while absent and present lists are populated with this same data. 
+An app that allows a classroom teacher to keep track of attendance. Students are able to sign themselves in and out, while absent and present lists are populated with this same data.
 
 ##Technologies Used
 <a href='https://angularjs.org/'>AngularJS</a> <br>
@@ -19,7 +19,7 @@ JavaScript
 To use the app, clone the repository. In your command line, start a server by typing `python -m SimpleHTTPServer`. In your web browser, navigate to `localhost:8000` .<br><br>
 
 
-##Copyright (c) 2015 Kyle Giard-Chase & Brian Kropff
+##Copyright (c) 2015 Kyle Giard-Chase
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
