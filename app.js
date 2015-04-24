@@ -11,4 +11,5 @@ var studentSignIn = angular.module('studentSignIn', ['ui.router']);
       templateUrl: 'partials/sign_in.html',
       controller: 'StatusCtrl'
     });
+    
   });

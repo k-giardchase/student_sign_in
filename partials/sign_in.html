@@ -1,0 +1,14 @@
+<div class="">
+  <h1>Sign-in, please</h1>
+  <ul class='list-unstyled'>
+    <li ng-repeat='item in students'>
+      {{ item.name }}
+      <span ng-click='absent = false' ng-hide='!absent'>
+        <button ng-click='signIn()'type='submit' class='btn btn-info'>Sign-in</button>
+      </span>
+      <span ng-click='absent = true' ng-hide='absent'>
+        <button ng-click='signOut()'type='submit' class='btn btn-danger'>Sign-out</button>
+      </span>
+    </li>
+  </ul>
+</div>
