@@ -1,14 +1,10 @@
-<div class="">
+<div class="col-md-4 col-md-offset-4">
   <h1>Sign-in, please</h1>
   <ul class='list-unstyled'>
     <li ng-repeat='item in students'>
       {{ item.name }}
-      <span ng-click='here = true' ng-hide='here'>
-        <a ng-click='signIn(item)'><button type='submit' class='btn btn-info'>Sign-in</button></a>
-      </span>
-      <span ng-show='here' ng-click='here = false'>
-        <a ng-click='signOut(item)'><button type='submit' class='btn btn-danger'>Sign-out</button></a>
-      </span>
+        <button ng-click='signIn(item)' ng-show='!item.present' type='submit' class='btn btn-info'>Sign-in</button>
+        <button ng-click='signOut(item)'ng-show='item.present' type='submit' class='btn btn-danger'>Sign-out</button>
     </li>
   </ul>
 </div>

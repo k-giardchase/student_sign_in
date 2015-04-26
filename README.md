@@ -5,18 +5,22 @@ Kyle Giard-Chase
 April 24 2015
 
 
-
 ##Description
 An app that allows a classroom teacher to keep track of attendance. Students are able to sign themselves in and out, while absent and present lists are populated with this same data.
 
 ##Technologies Used
 <a href='https://angularjs.org/'>AngularJS</a> <br>
 <a href='http://angular-ui.github.io/'>AngularUI</a><br>
-JavaScript
+Javascript <br>
+<a href='http://getbootstrap.com/'>Bootstrap </a>for styling <br>
 
 
 ##Use and Editing
-To use the app, clone the repository. In your command line, start a server by typing `python -m SimpleHTTPServer`. In your web browser, navigate to `localhost:8000` .<br><br>
+To use the app,<br>
+1. Clone the repository `git clone https://github.com/k-giardchase/student_sign_in.git`<br>
+2. Change directory into the folder `cd student_sign_in`<br>
+3. Start a python server by typing `python -m SimpleHTTPServer` <br>
+4. In your web browser, navigate to `localhost:8000` <br>
 
 
 ##Copyright (c) 2015 Kyle Giard-Chase
