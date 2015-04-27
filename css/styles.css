@@ -1,0 +1,10 @@
+.jumbotron {
+  height: 400px;
+  background: url('../img/chalkboard.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+li {
+  font-size: 18px;
+}

@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-6 text-justify">
+  <div class="col-md-3 col-md-offset-3 text-justify">
     <h2>Present</h2>
     <ul class='list-unstyled'>
       <li ng-repeat='item in filteredStudents = (students | filter: {present: true})'>
@@ -7,7 +7,7 @@
       </li>
     </ul>
   </div>
-  <div class="col-md-6 text-justify">
+  <div class="col-md-3 text-justify">
     <h2>Absent</h2>
     <ul class='list-unstyled'>
       <li ng-repeat='item in filteredStudents = (students | filter: {present: false})'>
