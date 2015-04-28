@@ -8,3 +8,20 @@
 li {
   font-size: 18px;
 }
+
+.navbar {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.student-image {
+  margin-top: 20px;
+}
