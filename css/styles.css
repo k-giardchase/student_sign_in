@@ -14,10 +14,18 @@ li {
   border-color: #eea236;
 }
 
-.box {
+.absent {
   height: 150px;
   width: 150px;
   background-color: lightgrey;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.present {
+  height: 150px;
+  width: 150px;
+  background-color: #FFEC8B;
   margin-bottom: 20px;
   margin-right: 20px;
 }

@@ -3,7 +3,7 @@
     <h2 class='text-left'>Present</h2>
     <ul class='list-unstyled'>
       <li ng-repeat='item in filteredStudents = (students | filter: {present: true})'>
-          <div class="col-md-4 text-center box">
+          <div class="col-md-4 text-center box present">
         {{item.name}}
         <br>
         <i class="fa fa-user fa-3x student-image"></i>
@@ -15,7 +15,7 @@
     <h2 class="text-left">Absent</h2>
     <ul class='list-unstyled'>
       <li ng-repeat='item in filteredStudents = (students | filter: {present: false})'>
-          <div class="col-md-4 text-center box">
+          <div class="col-md-4 text-center absent">
         {{item.name}}
         <br>
         <i class="fa fa-user fa-3x student-image"></i>
