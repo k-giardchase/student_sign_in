@@ -7,9 +7,8 @@ studentSignIn.controller('StudentsCtrl', function StudentsCtrl($scope, StudentsF
       $scope.studentName = null;
     };
 
-    $scope.deleteStudent = function() {
-      var name = $scope.studentName;
-      StudentsFactory.deleteStudent(name);
+    $scope.deleteStudent = function(student) {
+      StudentsFactory.deleteStudent(student);
     };
-    
+
 });
