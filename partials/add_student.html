@@ -1,0 +1,20 @@
+<div>
+  <div class='col-md-6'>
+    <h2>New Student</h2>
+    <form ng-submit='addStudent()' class='form-inline' role='form'>
+      <div class='form-group'>
+        <input type='text' ng-model='studentName' class='form-control' placeholder='Enter Name'>
+      </div>
+      <button type='submit' class='btn btn-default'>Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class='col-md-6'>
+  <h2>Roster</h2>
+  <ol>
+    <li ng-repeat="item in students">
+    {{ item.name }}
+    </li>
+  </ol>
+</div>

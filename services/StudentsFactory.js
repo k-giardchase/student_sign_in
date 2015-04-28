@@ -1,6 +1,12 @@
 studentSignIn.factory('StudentsFactory', function StudentsFactory() {
   var factory = {};
-  factory.students = [];
+  factory.students = [
+    { name: "Kyle", present: false },
+    { name: "Maggie", present: false },
+    { name: "Erik", present: false },
+    { name: "Bryant", present: false },
+    { name: "Gillian", present: false }
+  ];
 
   factory.addStudent = function(newName) {
    this.students.push({name: newName, present: false });

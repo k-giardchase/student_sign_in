@@ -18,4 +18,10 @@ var studentSignIn = angular.module('studentSignIn', ['ui.router']);
       controller: 'StudentsCtrl'
     });
 
+    $stateProvider.state('add_student', {
+      url: '/add_student',
+      templateUrl: 'partials/add_student.html',
+      controller: 'StudentsCtrl'
+    });
+
   });
